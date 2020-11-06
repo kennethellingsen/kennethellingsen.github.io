@@ -1,17 +1,13 @@
 <div id="question1">
     <header>What is 3 + 4:</header>
     <div class="form-check">
-        <input class="form-check-input" type="radio" value="option1">
-        <label class="form-check-label" for="exampleRadios1">6</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" value="option2">
-        <label class="form-check-label" for="exampleRadios2">7</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" value="option3">
-        <label class="form-check-label" for="exampleRadios3">8</label>
-      </div>
+      <form action="">
+        <input type="radio" name="answer" value="six">6<br>
+        <input type="radio" name="answer" value="seven">7<br>
+        <input type="radio" name="answer" value="eight">8
+      </form>
+    </div>
+    <button class="btn btn-primary btn-lg" onclick="load_content()">Next</button>
 </div>
 
 
@@ -23,6 +19,7 @@
           <input class="form-control input-lg" id="inputlg" type="text">
         </div>
     </form>
+    <button class="btn btn-primary btn-lg" onclick="load_content()">Next</button>
 </div>
 
 
@@ -35,9 +32,15 @@
           <span class="sr-only">Toggle Dropdown</span>
         </button>
         <ul class="dropdown-menu">
-          <li><a href="#">6</a></li>
-          <li><a href="#">7</a></li>
-          <li><a href="#">8</a></li>
+          <li value="six">6</li>
+          <li value="seven">7</li>
+          <li value="eight">8</li>
         </ul>
       </div>
+      <button class="btn btn-primary btn-lg" onclick="load_content(true)">Result</button>
+</div>
+
+
+<div id="result">
+  <header>You scored: 0 out of 3. Well done!</header>
 </div>
