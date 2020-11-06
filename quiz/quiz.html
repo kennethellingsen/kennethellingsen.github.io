@@ -9,10 +9,11 @@
     <title>:: kennethellingsen.github.io ::</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <script>
+	  <script type="text/javascript">
+
     </script>
 
     <style>
@@ -32,11 +33,19 @@
         <div class="jumbotron">
             <h1>quiz</h1>
             <p>welcome to our quiz of the week section</p>
-            <button type="button" class="btn btn-primary btn-lg">Start quiz</button>
+
+            <div id="main_content">
+              <script type="text/javascript">
+              function load_page() {
+                $("#main_content").load("question1.html #question1");
+              }
+              </script>
+            </div>
+
+            <button class="btn btn-primary btn-lg" onclick="load_page()">Start quiz</button>
         </div>
 
-        <div class="main"></div>
-      
+        
    
     </div>
   </body>
