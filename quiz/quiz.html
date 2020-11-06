@@ -33,19 +33,16 @@
         <div class="jumbotron">
             <h1>quiz</h1>
             <p>welcome to our quiz of the week section</p>
-
-            <div id="main_content">
-              <script type="text/javascript">
-              function load_page() {
-                $("#main_content").load("question1.html #question1");
-              }
-              </script>
-            </div>
-
             <button class="btn btn-primary btn-lg" onclick="load_page()">Start quiz</button>
         </div>
 
-        
+        <div id="main_content">
+          <script type="text/javascript">
+          function load_page() {
+            $("#main_content").load("questions.html #question1");
+          }
+          </script>
+        </div>
    
     </div>
   </body>
